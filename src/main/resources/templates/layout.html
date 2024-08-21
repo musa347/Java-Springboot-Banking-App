@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking App</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <h1>Banking App</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/accounts}">Accounts</a></li>
+            <li><a th:href="@{/transactions}">Transactions</a></li>
+        </ul>
+    </nav>
+</header>
+<div th:insert="~{::body}"></div>
+<footer>
+    <p>&copy; 2024 Banking App</p>
+</footer>
+</body>
+</html>
